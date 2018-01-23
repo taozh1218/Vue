@@ -1,0 +1,45 @@
+@import url("//unpkg.com/element-ui/lib/theme-chalk/index.css");
+
+.el-row {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.el-col {
+    border-radius: 4px;
+}
+
+.bg-purple-dark {
+    background: #99a9bf;
+}
+
+.bg-purple {
+    background: #d3dce6;
+}
+
+.bg-purple-light {
+    background: #e5e9f2;
+}
+
+.bg-blank{
+    background:#ffffff;
+}
+
+.bg-blue{
+    background: #409EFF;
+}
+
+.grid-content {
+    border-radius: 5px;
+    min-height: 40px;
+}
+
+.row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+}
+
+.margin_top{
+    margin-top: 10px;
+}

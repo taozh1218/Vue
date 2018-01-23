@@ -1,0 +1,33 @@
+<style scoped>
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.dialog {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+.loginPage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -175px;
+    width: 350px;
+    min-height: 300px;
+    padding: 30px 20px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.loginPage p {
+    color: red;
+    text-align: left;
+}
+
+</style>

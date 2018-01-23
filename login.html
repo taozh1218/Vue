@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+
+    <!--Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="//unpkg.com/element-ui@2.0.11/lib/index.js"></script>
+    <!--element-->
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <!--custom-->
+    <script src="./js/document_ready.js"></script>
+    <link rel="stylesheet" href="./css/login.css"/>
+</head>
+<body style="height: 100%">
+
+
+<!--<div id="app">-->
+<!--<el-row :gutter="20">-->
+<!--<el-col :span="6"><div class="grid-content bg-blank"></div></el-col>-->
+<!--<el-col :span="6"><div class="grid-content bg-purple"></div></el-col>-->
+<!--<el-col :span="6"><div class="grid-content bg-purple"></div></el-col>-->
+<!--<el-col :span="6"><div class="grid-content bg-blank"></div></el-col>-->
+<!--</el-row>-->
+<!--</div>-->
+
+
+<div id="app" style="height: 100%;align:center">
+    <el-row :gutter="20">
+        <el-col :span="8">
+            <div class="grid-content bg-blank"></div>
+        </el-col>
+
+        <el-col :span="8">
+            <div class="grid-content " style="height: 30%;margin-top: 30%">
+
+
+                <!--clearable-->
+                <el-input style="margin-top: 10px" id="account" v-model="account" placeholder="请输入帐号">
+                    <!--前置-->
+                    <template slot="prepend">帐号</template>
+                </el-input>
+
+                <el-input style="margin-top: 10px" id="psw" v-model="psw" placeholder="请输入密码">
+                    <!--前置-->
+                    <template slot="prepend">密码</template>
+                </el-input>
+
+
+                <el-button id="btn_login" type="primary" plain style="margin-left: 40%;margin-top: 20px" v-on:click="login">主要按钮
+                </el-button>
+
+            </div>
+        </el-col>
+        <el-col :span="8">
+            <div class="grid-content bg-blank"></div>
+        </el-col>
+    </el-row>
+
+</div>
+
+
+<script src="./js/login.js"></script>
+</body>
+</html>
